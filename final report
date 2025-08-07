@@ -1,0 +1,106 @@
+
+(base) admin1@cloud-15:~$ ollama pull llama3:8b
+pulling manifest
+pulling 6a0746a1ec1a: 100% ▕██████████████████▏ 4.7 GB                        
+pulling 4fa551d4f938: 100% ▕██████████████████▏  12 KB                        
+pulling 8ab4849b038c: 100% ▕██████████████████▏  254 B                        
+pulling 577073ffcc6c: 100% ▕██████████████████▏  110 B                        
+pulling 3f8eb4da87fa: 100% ▕██████████████████▏  485 B                        
+verifying sha256 digest
+writing manifest
+success
+(base) admin1@cloud-15:~$ nano Modelfile
+(base) admin1@cloud-15:~$ ollama create customer-support -f Modelfile
+gathering model components
+using existing layer sha256:6a0746a1ec1aef3e7ec53868f220ff6e389f6f8ef87a01d77c96807de94ca2aa
+using existing layer sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f
+using existing layer sha256:8ab4849b038cf0abc5b1c9b8ee1443dca6b93a045c2272180d985126eb40bf6f
+creating new layer sha256:f1858c766041992b0034a4bf4d1d5277adc33365a0d4f0d95fb43e379e923ef9
+creating new layer sha256:8f463dde84ff152a6bb20a30e3edc73c2bacf38bd417693cbf0f6ecb5c67c375
+writing manifest
+success
+(base) admin1@cloud-15:~$ ollama run customer-support
+>>> how to book appointment
+To book an appointment, you can follow these steps:
+
+1. Visit our website: [insert website URL]
+2. Click on "Book Appointment" or "Schedule Now"
+3. Fill out the online form with your details (name, contact info, etc.)
+4. Choose a date and time that suits you
+5. Select the reason for your visit (e.g., follow-up, new patient, etc.)
+6. Confirm your booking by clicking "Submit"
+
+Alternatively, you can:
+
+* Call our appointment line: [insert phone number]
+* Visit our clinic in person during business hours: [insert location and hours]
+* Ask a friend or family member to book an appointment for you (if they have access to the system)
+
+We'll
+
+>>> i need to cancel my appointment for friday 10.00 am
+I'd be happy to help you with that! Can you please confirm your name and the details of your original appointment, including the date
+and time?
+
+>>> yeah and i paid for pre booking can i get refund
+Sorry to hear that you need to cancel!
+
+To process the cancellation, I'll just need some more information from you. Can you please confirm:
+
+* Your full name
+* The original appointment date and time (Friday 10:00 am)
+* The reason for cancelling (optional but helpful)
+
+Regarding the pre-booking payment, I can check on that for you!
+
+>>>
+(base) admin1@cloud-15:~$ ^[[200~cd ~/customer-support
+cd: command not found
+(base) admin1@cloud-15:~$ nano README.md
+(base) admin1@cloud-15:~$ ollama create customer-support -f Modelfile
+gathering model components
+using existing layer sha256:6a0746a1ec1aef3e7ec53868f220ff6e389f6f8ef87a01d77c96807de94ca2aa
+using existing layer sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f
+using existing layer sha256:8ab4849b038cf0abc5b1c9b8ee1443dca6b93a045c2272180d985126eb40bf6f
+using existing layer sha256:f1858c766041992b0034a4bf4d1d5277adc33365a0d4f0d95fb43e379e923ef9
+using existing layer sha256:8f463dde84ff152a6bb20a30e3edc73c2bacf38bd417693cbf0f6ecb5c67c375
+writing manifest
+success
+(base) admin1@cloud-15:~$ ollama run customer-support
+>>> can i book a lab test
+I'd be happy to help you with that! Yes, you can definitely book a lab test. Can you please provide me with some more information about
+the type of test you need and what's prompting it? That way, I can assist you in scheduling an appointment at your earliest convenience.
+
+>>>
+(base) admin1@cloud-15:~$ nano .gitignore
+(base) admin1@cloud-15:~$ git init
+git add .
+git commit -m "Initial commit with Modelfile, dataset, and README"
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/admin1/.git/
+fatal: confused by unstable object source data for 7455efb669a51ac00e165322d108d8107a80ae0c
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'admin1@cloud-15.(none)')
+(base) admin1@cloud-15:~$
+
+

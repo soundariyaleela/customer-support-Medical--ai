@@ -1,0 +1,8 @@
+{"prompt": "How to book an appointment?", "response": "Open the app, tap 'Book Appointment', select a doctor and time slot."}
+{"prompt": "Where are my reports?", "response": "You'll find them in the 'Health Records' section of the app."}
+{"prompt": "How to cancel medicine order?", "response": "Go to 'Orders', select the order, and tap 'Cancel'."}
+{"prompt": "Can I reschedule my appointment?", "response": "Yes, go to 'My Appointments' and tap 'Reschedule'."}
+{"prompt": "Is insurance accepted?", "response": "Yes, we accept selected insurers. Check during payment."}
+{"prompt": "Emergency help needed", "response": "Use 'Instant Video Consultation' in the app for urgent care."}
+{"prompt": "Where to find prescriptions?", "response": "Prescriptions are saved in 'Health Records' section."}
+{"prompt": "Payment failed", "response": "Please try again or raise a ticket in the 'Help' section."}
